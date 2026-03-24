@@ -14,15 +14,12 @@ return new class extends Migration
         Schema::create('municipios', function (Blueprint $table) {
             $table->id();
             $table->string('nombre', 100)->unique();
-            $table->unsignedInteger('entidad')->unique();
+            $table->unsignedInteger('entidad');
+            $table->unsignedInteger('no_municipio')->unique();
             $table->string('mapa', 255)->nullable();
 
             $table->foreignId('region_id')
                 ->constrained('regiones')
-                ->onDelete('cascade');
-
-            $table->foreignId('diputado_local_id')
-                ->constrained('diputado_locals')
                 ->onDelete('cascade');
 
             $table->timestamps();

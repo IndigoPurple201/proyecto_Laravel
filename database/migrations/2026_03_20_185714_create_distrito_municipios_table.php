@@ -11,19 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('diputado_locals', function (Blueprint $table) {
-            $table->id();
-            $table->string('nombre', 150)->unique();
-
-            $table->foreignId('partido_id')
-                ->constrained('partidos')
+        Schema::create('distrito_municipios', function (Blueprint $table) {
+            $table->foreignId('municipio_id')
+                ->constrained('municipios')
                 ->onDelete('cascade');
 
             $table->foreignId('distrito_id')
                 ->constrained('distritos')
                 ->onDelete('cascade');
 
-            $table->timestamps();
+            $table->unique(['municipio_id', 'distrito_id']);
         });
     }
 
@@ -32,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('diputado_locals');
+        Schema::dropIfExists('distrito_municipios');
     }
 };
