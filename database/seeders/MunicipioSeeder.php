@@ -44,6 +44,14 @@ class MunicipioSeeder extends Seeder
             ['id' => 28, 'nombre' => "SABINAS", "entidad" => 5, "no_municipio" => 28, "mapa" =>'Sabinas. Coah. México', "region_id" =>1],
             ['id' => 29, 'nombre' => "SACRAMENTO", "entidad" => 5, "no_municipio" => 29, "mapa" =>'Sacramento. Coah. México', "region_id" =>3],
             ['id' => 30, 'nombre' => "SALTILLO", "entidad" => 5, "no_municipio" => 30, "mapa" =>'Saltillo. Coah. México', "region_id" =>2],
+            ['id' => 31, 'nombre' => "SAN BUENAVENTURA", "entidad" => 5, "no_municipio" => 31, "mapa" =>'San Buenaventura. Coah. México', "region_id" =>3],
+            ['id' => 32, 'nombre' => "SAN JUAN DE SABINAS", "entidad" => 5, "no_municipio" => 32, "mapa" =>'San Juan de Sabinas. Coah. México', "region_id" =>1],
+            ['id' => 33, 'nombre' => "SAN PEDRO", "entidad" => 5, "no_municipio" => 33, "mapa" =>'San Pedro. Coah. México', "region_id" =>5],
+            ['id' => 34, 'nombre' => "SIERRA MOJADA", "entidad" => 5, "no_municipio" => 34, "mapa" =>'Sierra Mojada. Coah. México', "region_id" =>3],
+            ['id' => 35, 'nombre' => "TORREON", "entidad" => 5, "no_municipio" => 35, "mapa" =>'Torreón. Coah. México', "region_id" =>5],
+            ['id' => 36, 'nombre' => "VIESCA", "entidad" => 5, "no_municipio" => 36, "mapa" =>'Viesca. Coah. México', "region_id" =>5],
+            ['id' => 37, 'nombre' => "VILLA UNIÓN", "entidad" => 5, "no_municipio" => 37, "mapa" =>'Villa Unión. Coah. México', "region_id" =>4],
+            ['id' => 38, 'nombre' => "ZARAGOZA", "entidad" => 5, "no_municipio" => 38, "mapa" =>'Zaragoza. Coah. México', "region_id" =>4],
         ]);
     }
 }
